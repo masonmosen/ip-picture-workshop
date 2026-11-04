@@ -1,0 +1,4 @@
+interface:
+  display_name: "IP 图文工坊"
+  short_description: "用照片定制专属人物形象，把文章和文字变成多页社交图文"
+  default_prompt: "使用 $ip-picture-workshop，基于我的照片和文字生成专属 IP 多页图文。"
