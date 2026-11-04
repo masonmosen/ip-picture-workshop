@@ -18,3 +18,7 @@ This is evidence for the underlying workflow in that conversation. It is not a f
 2. User provides a selected character and a requested outfit: reuse the character, respect the outfit, do not add incidental accessories.
 3. User supplies an inaccessible link: ask for accessible content rather than inventing it.
 4. User asks to change page 4: regenerate page 4 while preserving other outputs.
+
+## GitHub discovery check — 2026-11-04
+
+The public repository was cloned by `npx skills add ... --list`, which detected exactly one skill, `ip-picture-workshop`. This Mac required its existing SSH-over-443 GitHub route because direct HTTPS cloning failed. List mode did not install or execute the skill. A shared-directory symlink was registered locally; fresh Codex session discovery and an end-to-end run from the installed package remain unverified.
