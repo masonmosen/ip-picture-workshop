@@ -1,10 +1,36 @@
-# IP 图文工坊 | IP Picture Workshop
+# IP Picture Workshop — Agent Skill for Photo-Based IP Carousels
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/masonmosen/ip-picture-workshop.svg)](https://github.com/masonmosen/ip-picture-workshop/stargazers)
+
+**Photo to character. Text to illustrated carousel.** Create a recognizable personal character and turn articles, notes, stories, or scripts into cohesive social-media image cards.
 
 **一张照片，一段文字，变成有你专属角色的多页图文。**
 
-IP 图文工坊是一个面向 Codex 的 AI Skill：根据照片定制不同画风的个人 IP 形象，读取文章、笔记、故事或口播稿，自动拆解内容并生成带文字的系列图片。适合小红书图文、公众号文章配图、知识卡片和个人品牌内容创作。
+An AI Skill for Codex: it builds a personal IP character in different styles from a photo, reads an article, note, story, or script, and generates a series of illustrated image cards with text. Works for Xiaohongshu carousels, WeChat article art, knowledge cards, and personal-brand content.
 
-**Photo to character. Text to illustrated carousel.** Create a recognizable personal character and turn articles, notes, stories, or scripts into cohesive social-media image cards.
+## Demo
+
+> **Demo uses a fictional character, no photo input.** The demo below was generated from a text-only description of a fictional creator “小满” (Xiao Man) — round glasses, freckles, beige sweater — not from any real person's photo. With a real photo, the same skill builds the character from that photo instead.
+>
+> **Demo 说明：虚拟角色，无照片输入。** 下面的 Demo 用纯文字描述的虚拟博主“小满”（圆框眼镜、雀斑、米白毛衣）生成，没有用任何真人照片；有照片时，技能会按照片定制角色。
+
+![Demo collage: 3-page carousel of fictional creator Xiao Man](docs/demo/05-collage-3pages.jpg)
+
+Demo: 1 style sheet + 3 pages, 3:4, Codex built-in imagegen. [Style sheet](docs/demo/01-style-sheet.png) · [Page 1](docs/demo/02-page1.png) · [Page 2](docs/demo/03-page2.png) · [Page 3](docs/demo/04-page3.png)
+
+## Install
+
+```bash
+npx skills add https://github.com/masonmosen/ip-picture-workshop --skill ip-picture-workshop
+```
+
+## What you get
+
+- **Custom character**: build one recognizable IP character in several styles and expressions, then pick your favorite.
+- **One input, many pages**: the skill plans cover, highlights, visuals, and reading order from your text.
+- **Complete illustrated pages**: character, scene, and text generated together — no layout or prompt craft needed.
+- **Single-page redo**: point at a page and say what to change; the rest stays.
+- **Reuse across posts**: save the chosen character reference and keep the same look in the next piece.
 
 ## 它能帮你做什么？
 
@@ -72,3 +98,14 @@ npx skills add https://github.com/masonmosen/ip-picture-workshop --skill ip-pict
 ## 来源与许可
 
 本项目由 Mason OPC 根据真实创作需求独立编写；工作流程研究时参考了 [YouMind 公众号长文一键转漫画贴图](https://youmind.com/~skills/01a18d41-91d8-7f81-8b15-44bae30f496e) 的公开说明及可见交互，也参考了公开图文工作流思路。未复制其私有提示词或服务端代码。本项目以 MIT License 发布；第三方服务和生图工具各自的条款与费用另行适用。
+
+---
+
+## More from MOSEN
+
+- [muse-video-prompt-skill](https://github.com/masonmosen/muse-video-prompt-skill) — Prompt engineering workflow for Muse built-in video generation.
+- [mason-opc-motion-video](https://github.com/masonmosen/mason-opc-motion-video) — Talking-head video + script → editable motion-graphics video.
+- [mosen-ad-studio](https://github.com/masonmosen/mosen-ad-studio) — Brand ads & product promos made entirely as code.
+- [remake-depth-breakdown](https://github.com/masonmosen/remake-depth-breakdown) — Reference video → depth video + Seedance-ready prompts.
+- [cueshot-starter-skills](https://github.com/masonmosen/cueshot-starter-skills) — Free starter skills for AI video shot planning & review.
+- [reference-video-blueprint](https://github.com/masonmosen/reference-video-blueprint) — Authorized reference video → original Prompt Contract.
